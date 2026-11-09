@@ -1,4 +1,0 @@
--- Q3. Find the minimum salary of an employee.
-
-SELECT MIN(salary) AS Minimum_Salary
-FROM employees;
