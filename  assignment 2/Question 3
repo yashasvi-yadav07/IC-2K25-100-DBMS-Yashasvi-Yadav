@@ -1,0 +1,21 @@
+
+-- Question 3
+
+USE hr;
+
+SELECT *
+FROM EMPLOYEES
+ORDER BY FIRST_NAME DESC;
+
+mysql> USE hr;
+Database changed
+
+mysql> SELECT *
+    -> FROM EMPLOYEES
+    -> ORDER BY FIRST_NAME DESC;
+
++-------------+------------+-----------+--------+
+| EMPLOYEE_ID | FIRST_NAME | LAST_NAME | ...    |
++-------------+------------+-----------+--------+
+|             |            |           |        |
++-------------+------------+-----------+--------+
