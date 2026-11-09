@@ -1,0 +1,7 @@
+
+-- Q11. Find average salary for each job ID excluding Programmer.
+
+SELECT job_id, AVG(salary) AS Average_Salary
+FROM employees
+WHERE job_id <> 'IT_PROG'
+GROUP BY job_id;
