@@ -1,0 +1,4 @@
+Q2. Write a query to display the required employee details.
+
+SELECT *
+FROM employees;
