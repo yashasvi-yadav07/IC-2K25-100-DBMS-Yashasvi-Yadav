@@ -1,0 +1,6 @@
+
+-- Question 8: Find the difference between the highest
+-- and lowest salaries.
+
+SELECT MAX(salary) - MIN(salary) AS Salary_Difference
+FROM employees;
