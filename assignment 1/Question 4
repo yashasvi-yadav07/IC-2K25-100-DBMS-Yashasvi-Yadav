@@ -1,0 +1,6 @@
+
+-- Q4. Find the maximum salary of a Programmer.
+
+SELECT MAX(salary) AS Maximum_Salary
+FROM employees
+WHERE job_id = 'PROGRAMMER';
