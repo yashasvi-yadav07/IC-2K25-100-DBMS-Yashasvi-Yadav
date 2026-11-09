@@ -1,0 +1,7 @@
+
+-- Q13. Display job ID and maximum salary where maximum salary >= 4000.
+
+SELECT job_id, MAX(salary) AS Maximum_Salary
+FROM employees
+GROUP BY job_id
+HAVING MAX(salary) >= 4000;
