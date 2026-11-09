@@ -1,4 +1,0 @@
--- Q2. Write a query to get the total salary payable to employees.
-
-SELECT SUM(salary) AS Total_Salary
-FROM employees;
