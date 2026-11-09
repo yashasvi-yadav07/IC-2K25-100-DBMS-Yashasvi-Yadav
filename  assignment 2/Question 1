@@ -1,0 +1,22 @@
+
+-- Question 1
+
+USE hr;
+
+SELECT
+    FIRST_NAME AS 'First Name',
+    LAST_NAME AS 'Last Name'
+FROM EMPLOYEES;
+
+mysql> USE hr;
+Database changed
+
+mysql> SELECT FIRST_NAME AS 'First Name',
+    -> LAST_NAME AS 'Last Name'
+    -> FROM EMPLOYEES;
+
++------------+-----------+
+| First Name | Last Name |
++------------+-----------+
+|            |           |
++------------+-----------+
