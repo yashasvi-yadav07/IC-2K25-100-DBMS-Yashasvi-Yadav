@@ -1,0 +1,20 @@
+
+-- Question 2
+
+USE hr;
+
+SELECT DISTINCT DEPARTMENT_ID
+FROM EMPLOYEES;
+mysql> USE hr;
+Database changed
+
+mysql> SELECT DISTINCT DEPARTMENT_ID
+    -> FROM EMPLOYEES;
+
++---------------+
+| DEPARTMENT_ID |
++---------------+
+|             1 |
+|             2 |
+|             3 |
++---------------+
