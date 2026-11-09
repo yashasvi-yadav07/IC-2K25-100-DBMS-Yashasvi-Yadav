@@ -1,0 +1,110 @@
+
+-- Question 4
+
+USE hr;
+
+SELECT
+    FIRST_NAME,
+    LAST_NAME,
+    SALARY,
+    SALARY * 0.15 AS PF
+FROM EMPLOYEES;
+
++------------+-----------+--------+--------+
+| FIRST_NAME | LAST_NAME | SALARY | PF     |
++------------+-----------+--------+--------+
+| ...        | ...       | ...    | ...    |
++------------+-----------+--------+--------.
+
+
+-- Assignment 2
+-- Question 5
+
+USE hr;
+
+SELECT
+    EMPLOYEE_ID,
+    FIRST_NAME,
+    LAST_NAME,
+    SALARY
+FROM EMPLOYEES
+ORDER BY SALARY ASC;
++-------------+------------+-----------+--------+
+| EMPLOYEE_ID | FIRST_NAME | LAST_NAME | SALARY |
++-------------+------------+-----------+--------+
+| ...         | ...        | ...       | ...    |
++-------------+------------+-----------+--------+
+
+
+-- Assignment 2
+-- Question 6
+
+USE hr;
+
+SELECT SUM(SALARY) AS TOTAL_SALARIES
+FROM EMPLOYEES;
++----------------+
+| TOTAL_SALARIES |
++----------------+
+|                |
++----------------+
+
+
+-- Assignment 2
+-- Question 7
+
+USE hr;
+
+SELECT
+    MAX(SALARY) AS MAX_SALARY,
+    MIN(SALARY) AS MIN_SALARY
+FROM EMPLOYEES;
++------------+------------+
+| MAX_SALARY | MIN_SALARY |
++------------+------------+
+|            |            |
++------------+------------+
+
+
+-- Assignment 2
+-- Question 8
+
+USE hr;
+
+SELECT
+    AVG(SALARY) AS AVERAGE_SALARY,
+    COUNT(*) AS NUMBER_OF_EMPLOYEES
+FROM EMPLOYEES;
++----------------+----------------------+
+| AVERAGE_SALARY | NUMBER_OF_EMPLOYEES  |
++----------------+----------------------+
+|                |                      |
++----------------+----------------------+
+
+
+-- Assignment 2
+-- Question 9
+
+USE hr;
+
+SELECT COUNT(*) AS TOTAL_EMPLOYEES
+FROM EMPLOYEES;
++-----------------+
+| TOTAL_EMPLOYEES |
++-----------------+
+|                 |
++-----------------+
+
+
+-- Assignment 2
+-- Question 10
+
+USE hr;
+
+SELECT COUNT(DISTINCT JOB_ID) AS TOTAL_JOBS
+FROM EMPLOYEES;
++------------+
+| TOTAL_JOBS |
++------------+
+|            |
++------------+
