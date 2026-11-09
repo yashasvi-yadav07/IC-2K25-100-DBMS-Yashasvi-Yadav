@@ -1,0 +1,5 @@
+-- Q7. Find the number of employees working in each job.
+
+SELECT job_id, COUNT(*) AS Total_Employees
+FROM employees
+GROUP BY job_id;
