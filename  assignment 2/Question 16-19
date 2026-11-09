@@ -1,0 +1,80 @@
+
+-- Assignment 2
+-- Question 16
+
+USE hr;
+
+SELECT
+    FIRST_NAME,
+    LAST_NAME,
+    LENGTH(FIRST_NAME) AS FIRST_NAME_LENGTH,
+    LENGTH(LAST_NAME) AS LAST_NAME_LENGTH
+FROM EMPLOYEES;
++------------+-----------+------------------+-----------------+
+| FIRST_NAME | LAST_NAME | FIRST_NAME_LENGTH| LAST_NAME_LENGTH|
++------------+-----------+------------------+-----------------+
+| Steven     | King      | 6                | 4               |
+| Neena      | Kochhar   | 5                | 7               |
++------------+-----------+------------------+-----------------+
+
+-- Assignment 2
+-- Question 17
+
+USE hr;
+
+SELECT
+    FIRST_NAME,
+    CASE
+        WHEN FIRST_NAME REGEXP '[0-9]'
+        THEN 'Contains Number'
+        ELSE 'No Number'
+    END AS NUMBER_CHECK
+FROM EMPLOYEES;
++------------+------------------+
+| FIRST_NAME | NUMBER_CHECK     |
++------------+------------------+
+| Steven     | No Number        |
+| Neena      | No Number        |
+| Lex        | No Number        |
++------------+------------------+
+
+
+-- Assignment 2
+-- Question 18
+
+USE hr;
+
+SELECT *
+FROM EMPLOYEES
+LIMIT 10;
+mysql> SELECT *
+    -> FROM EMPLOYEES
+    -> LIMIT 10;
+
+10 rows in set
+
+
+mysql> SELECT *
+    -> FROM EMPLOYEES
+    -> LIMIT 10;
+
+10 rows in set
+
+
+-- Assignment 2
+-- Question 19
+
+USE hr;
+
+SELECT
+    EMPLOYEE_ID,
+    FIRST_NAME,
+    LAST_NAME,
+    ROUND(SALARY / 12, 2) AS MONTHLY_SALARY
+FROM EMPLOYEES;
++-------------+------------+-----------+----------------+
+| EMPLOYEE_ID | FIRST_NAME | LAST_NAME | MONTHLY_SALARY |
++-------------+------------+-----------+----------------+
+| 100         | Steven     | King      | 20000.00       |
+| 101         | Neena      | Kochhar   | 17000.00       |
++-------------+------------+-----------+----------------+
