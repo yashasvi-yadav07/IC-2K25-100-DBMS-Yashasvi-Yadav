@@ -1,0 +1,6 @@
+
+-- Question 9: Count the number of employees in each department.
+
+SELECT department_id, COUNT(*) AS Total_Employees
+FROM employees
+GROUP BY department_id;
