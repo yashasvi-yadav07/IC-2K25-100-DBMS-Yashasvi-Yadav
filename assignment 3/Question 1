@@ -1,0 +1,17 @@
+
+Question 1
+
+mysql> use subquery;
+
+Database changed
+
+mysql> SELECT first_name, last_name, salary
+    -> FROM employees
+    -> WHERE salary NOT BETWEEN 10000 AND 15000;
++------------+-------------+--------+
+| first_name | last_name   | salary |
++------------+-------------+--------+
+| becky      | ellish      |   4500 |
+| ethan      | blackwood   | 900000 |
+| sofie      | stewart     |  90000 |
++------------+-------------+--------+
