@@ -1,0 +1,51 @@
+
+question 11
+SELECT job_id, AVG(salary)
+FROM employees
+WHERE job_id != 'IT_PROG'
+GROUP BY job_id;
+
+mysql> SELECT job_id, AVG(salary)
+    -> FROM employees
+    -> WHERE job_id != 'IT_PROG'
+    -> GROUP BY job_id;
+
+question 12
+SELECT job_id, SUM(salary), MAX(salary),
+MIN(salary), AVG(salary)
+FROM employees
+WHERE department_id = 90
+GROUP BY job_id;
+
+mysql> SELECT job_id, SUM(salary), MAX(salary),
+    -> MIN(salary), AVG(salary)
+    -> FROM employees
+    -> WHERE department_id = 90
+    -> GROUP BY job_id;
+
+
+question 13
+
+SELECT job_id, MAX(salary)
+FROM employees
+GROUP BY job_id
+HAVING MAX(salary) >= 4000;
+
+
+mysql> SELECT job_id, MAX(salary)
+    -> FROM employees
+    -> GROUP BY job_id
+    -> HAVING MAX(salary) >= 4000;
+
+
+question 14
+
+SELECT department_id, AVG(salary)
+FROM employees
+GROUP BY department_id
+HAVING COUNT(*) > 10;
+
+mysql> SELECT department_id, AVG(salary)
+    -> FROM employees
+    -> GROUP BY department_id
+    -> HAVING COUNT(*) > 10;
