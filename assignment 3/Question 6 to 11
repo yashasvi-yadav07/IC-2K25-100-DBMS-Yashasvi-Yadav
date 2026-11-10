@@ -1,0 +1,67 @@
+question 6
+
+mysql> SELECT last_name, job_id, salary
+    -> FROM employees
+    -> WHERE job_id IN ('programmer', 'shipping clerk')
+    -> AND salary NOT IN (4500, 10000, 15000)
+
+;+-------------+------------+--------+
+| last_name   | job_id     | salary |
++-------------+------------+--------+
+| adams       | programmer |  11000 |
++-------------+------------+--------+
+
+
+question 7
+mysql> SELECT last_name
+    -> FROM employees
+    -> WHERE LENGTH(last_name) = 6;+-----------+
+| last_name |
++-----------+
+|           |
++-----------+
+
+question 8
+
+mysql> SELECT last_name
+    -> FROM employees
+    -> WHERE last_name LIKE '__e%';+-----------+
+| last_name |
++-----------+
+|           |
++-----------+
+
+
+question 9
+mysql> SELECT DISTINCT job_id
+    -> FROM employees;+--------------+
+| job_id       |
++--------------+
+| programmer   |
+| manager      |
+| team leader  |
++--------------+
+
+
+question 10
+mysql> SELECT first_name, last_name, salary,
+    -> salary * 0.15 AS PF
+    -> FROM employees;+------------+-------------+--------+-----------+
+| first_name | last_name   | salary | PF        |
++------------+-------------+--------+-----------+
+| rebeca     | adams       |  11000 |  1650.00  |
+| becky      | ellish      |   4500 |   675.00  |
+| ethan      | blackwood   | 900000 | 135000.00 |
++------------+-------------+--------+-----------+
+
+
+question 11
+mysql> SELECT *
+    -> FROM employees
+    -> WHERE last_name IN ('BLAKE', 'SCOTT', 'KING', 'FORD')
+
+;+------------+-----------+--------+------------+
+| first_name | last_name | salary | department  |
++------------+-----------+--------+------------+
+|            |           |        |            |
++------------+-----------+--------+------------+
