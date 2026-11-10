@@ -1,0 +1,8 @@
+SQL Query:
+SELECT SUM(salary)
+FROM employees;
+
+
+MySQL Terminal:
+mysql> SELECT SUM(salary)
+    -> FROM employees;
