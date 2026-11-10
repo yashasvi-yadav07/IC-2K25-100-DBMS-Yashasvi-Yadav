@@ -1,0 +1,66 @@
+
+question 5
+SQL QUERY:
+
+SELECT AVG(salary), COUNT(*)
+FROM employees
+WHERE department_id = 90;
+
+mysql terminal:mysql> SELECT AVG(salary), COUNT(*)
+    -> FROM employees
+    -> WHERE department_id = 90;
+
+question 6
+SQL QUERY:
+SELECT MAX(salary), MIN(salary),
+SUM(salary), AVG(salary)
+FROM employees;
+
+Mysql terminal:
+mysql> SELECT MAX(salary), MIN(salary),
+    -> SUM(salary), AVG(salary)
+    -> FROM employees;
+
+
+question 7
+Sql query:
+SELECT job_id, COUNT(*)
+FROM employees
+GROUP BY job_id;
+
+
+mysql terminal:
+mysql> SELECT job_id, COUNT(*)
+    -> FROM employees
+    -> GROUP BY job_id;
+ 
+question 8
+SELECT MAX(salary) - MIN(salary)
+FROM employees;
+
+mysql terminal:
+mysql> SELECT MAX(salary) - MIN(salary)
+    -> FROM employees;
+
+
+question 9
+
+SELECT manager_id, MIN(salary)
+FROM employees
+GROUP BY manager_id;
+
+
+mysql> SELECT manager_id, MIN(salary)
+    -> FROM employees
+    -> GROUP BY manager_id;
+
+question 10
+
+SELECT department_id, SUM(salary)
+FROM employees
+GROUP BY department_id;
+
+
+mysql> SELECT department_id, SUM(salary)
+    -> FROM employees
+    -> GROUP BY department_id;
