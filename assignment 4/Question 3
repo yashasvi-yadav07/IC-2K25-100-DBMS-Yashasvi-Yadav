@@ -1,0 +1,7 @@
+SQL Query:
+SELECT MIN(salary)
+FROM employees;
+
+MySQL Terminal:
+mysql> SELECT MIN(salary)
+    -> FROM employees;
