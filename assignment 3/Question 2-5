@@ -1,0 +1,46 @@
+question 2
+mysql> SELECT first_name, last_name, dep_id
+    -> FROM employees
+    -> WHERE dep_id IN (30, 100)
+    -> ORDER BY dep_id ASC;
++------------+-------------+--------+
+| first_name | last_name   | dep_id |
++------------+-------------+--------+
+| rebeca     | adams       |     30 |
+| becky      | ellish      |     30 |
+| ethan      | blackwood   |     30 |
++------------+-------------+--------+
+
+
+question 3
+mysql> SELECT first_name, last_name, salary
+    -> FROM employees
+    -> WHERE salary NOT BETWEEN 10000 AND 15000
+    -> AND dep_id IN (30, 100);+------------+-------------+--------+
+| first_name | last_name   | salary |
++------------+-------------+--------+
+| becky      | ellish      |   4500 |
+| ethan      | blackwood   | 900000 |
++------------+-------------+--------+
+ 
+
+question 4
+mysql> SELECT first_name, last_name, hire_date
+    -> FROM employees
+    -> WHERE YEAR(hire_date) = 1987;+------------+-----------+-----------+
+| first_name | last_name | hire_date |
++------------+-----------+-----------+
+|            |           |           |
++------------+-----------+-----------+
+
+
+question 5
+
+mysql> SELECT first_name
+    -> FROM employees
+    -> WHERE first_name LIKE '%b%'
+    -> AND first_name LIKE '%c%';+------------+
+| first_name |
++------------+
+| rebeca     |
++------------+
