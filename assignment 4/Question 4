@@ -1,0 +1,9 @@
+SQL Query:
+SELECT MAX(salary)
+FROM employees
+WHERE job_id = 'IT_PROG';
+
+MySQL Terminal:
+mysql> SELECT MAX(salary)
+    -> FROM employees
+    -> WHERE job_id = 'IT_PROG';
